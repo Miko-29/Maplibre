@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="https://cdn.maptiler.com/maplibre-gl-js/v2.4.0/maplibre-gl.js"></script>
+    <link href="https://cdn.maptiler.com/maplibre-gl-js/v2.4.0/maplibre-gl.css" rel="stylesheet" />
+    <style type="text/css">
+        #map {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: 600px;
+            width: 600px
+        }
+    </style>
+</head>
+
+<body>
+    <style>
+        .coordinates {
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            position: absolute;
+            bottom: 40px;
+            left: 10px;
+            padding: 5px 10px;
+            margin: 0;
+            font-size: 11px;
+            line-height: 18px;
+            border-radius: 3px;
+            display: none;
+        }
+    </style>
+    <div id='map'></div>
+    <pre id="coordinates" class="coordinates"></pre>
+    <script>
+        var map = new maplibregl.Map({
+            container: 'map',
+            style: `https://api.maptiler.com/maps/streets-v2/style.json?key=hexieZcA2URbi263fmhk`,
+            // style: 'https://demotiles.maplibre.org/style.json', // stylesheet location
+            center: [0, 0], // starting position [lng, lat]
+            zoom: 2 // starting zoom
+        });
+        var marker = new maplibregl.Marker({ draggable: true }).setLngLat([0, 0]).addTo(map);
+        function onDragEnd() {
+            const lngLat = marker.getLngLat();
+            coordinates.style.display = 'block';
+            coordinates.innerHTML =
+                `Longitude: ${lngLat.lng}<br />Latitude: ${lngLat.lat}`;
+        }
+        marker.on('dragend', onDragEnd);
+    </script>
+</body>
+
+</html>

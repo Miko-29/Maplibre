@@ -1,0 +1,230 @@
+{
+    "magic": "b3dm",
+    "version": 1,
+    "byteLength": 104272,
+    "featureTableJsonByteLength": 20,
+    "featureTableBinaryByteLength": 0,
+    "batchTableJsonByteLength": 384,
+    "batchTableBinaryByteLength": 0,
+    "featureTableJson": {
+        "BATCH_LENGTH": 73
+    },
+    "batchTableJson": {
+        "identificatie": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    },
+    "glb": {
+        "JSON": {
+            "asset": {
+                "generator": "SharpGLTF 1.0.0-cesiummetadata3+f1ef0933de0155301db61d89327add4e2c0b68d7",
+                "version": "2.0"
+            },
+            "accessors": [
+                {
+                    "name": "POSITION",
+                    "bufferView": 0,
+                    "componentType": 5126,
+                    "count": 3262,
+                    "max": [
+                        612.2232055664062,
+                        46.0179328918457,
+                        14.279999732971191
+                    ],
+                    "min": [
+                        77.19410705566406,
+                        -619.3767700195312,
+                        0
+                    ],
+                    "type": "VEC3"
+                },
+                {
+                    "name": "NORMAL",
+                    "bufferView": 0,
+                    "byteOffset": 12,
+                    "componentType": 5126,
+                    "count": 3262,
+                    "max": [
+                        0.9942380785942078,
+                        0.9941554665565491,
+                        1
+                    ],
+                    "min": [
+                        -0.9942378401756287,
+                        -0.9941555857658386,
+                        -1
+                    ],
+                    "type": "VEC3"
+                },
+                {
+                    "name": "_BATCHID",
+                    "bufferView": 0,
+                    "byteOffset": 24,
+                    "componentType": 5126,
+                    "count": 3262,
+                    "max": [
+                        72
+                    ],
+                    "min": [
+                        0
+                    ],
+                    "type": "SCALAR"
+                },
+                {
+                    "bufferView": 1,
+                    "componentType": 5123,
+                    "count": 5628,
+                    "type": "SCALAR"
+                }
+            ],
+            "bufferViews": [
+                {
+                    "buffer": 0,
+                    "byteLength": 91336,
+                    "byteStride": 28,
+                    "target": 34962
+                },
+                {
+                    "buffer": 0,
+                    "byteLength": 11256,
+                    "byteOffset": 91336,
+                    "target": 34963
+                }
+            ],
+            "buffers": [
+                {
+                    "byteLength": 102592
+                }
+            ],
+            "materials": [
+                {
+                    "doubleSided": true,
+                    "pbrMetallicRoughness": {
+                        "metallicFactor": 0,
+                        "roughnessFactor": 0.501960813999176
+                    }
+                }
+            ],
+            "meshes": [
+                {
+                    "name": "mesh",
+                    "primitives": [
+                        {
+                            "attributes": {
+                                "POSITION": 0,
+                                "NORMAL": 1,
+                                "_BATCHID": 2
+                            },
+                            "indices": 3,
+                            "material": 0
+                        }
+                    ]
+                }
+            ],
+            "nodes": [
+                {
+                    "matrix": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        -1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "mesh": 0
+                }
+            ],
+            "scene": 0,
+            "scenes": [
+                {
+                    "nodes": [
+                        0
+                    ]
+                }
+            ]
+        },
+        "BIN": 102592
+    }
+}
